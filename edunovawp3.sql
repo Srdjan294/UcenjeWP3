@@ -2,7 +2,7 @@ use master;
 go
 drop database if exists edunovawp3;
 go
--- ovo je komentar
+
 create database edunovawp3;
 go
 --drop database edunovawp3;
