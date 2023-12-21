@@ -88,7 +88,7 @@ insert into predavaci (ime, prezime, email) values
 ('Shaquille','O''Neal','shaki@gmail.com');
 
 
-
+--select * from predavaci;
 
 
 -- 1 do 24
@@ -119,6 +119,7 @@ insert into polaznici(ime,prezime,email) values
 ('Veljko','Vujić','veljko2805vujic@gmail.com');
 
 
+--select * from polaznici;
 
 
 
@@ -130,6 +131,7 @@ values
 ('WP2',null,'2023-11-07 17:00:00',1,25);
 
 
+--select * from grupe;
 
 
 insert into clanovi (grupa,polaznik) values
@@ -138,7 +140,7 @@ insert into clanovi (grupa,polaznik) values
 ,(1,17),(1,18),(1,19),(1,20),(1,21),(1,22),(1,23),(1,24);
 
 
-
+--select * from clanovi;
 
 
 
