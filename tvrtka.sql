@@ -38,7 +38,15 @@ insert into zaposlenici(ime, prezime, datumRodenja, placa, invalid) values
 
 insert into slike(zaposlenik, redniBroj, putanja) values
 (1,'1.','lijevo'),
-(2,'2.','desno');
+(1,'2.','desno');
+
+insert into slike(zaposlenik, redniBroj, putanja) values
+(2,'3.','lijevo gore'),
+(2,'4.','desno dolje');
+
+insert into slike(zaposlenik, redniBroj, putanja) values
+(3,'5.','lijevo gore'),
+(3,'6.','desno dolje');
 
 select * from zaposlenici;
 select * from slike;
