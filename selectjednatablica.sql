@@ -106,6 +106,31 @@ select * from odabrani;
 
 drop table odabrani;
 
+-- Baza knjižnica
+
+use knjiznica;
+
+-- Marka je ostavila cura. On sada pati!
+-- Dolazi u knjižnicu kod Vas i pita što mu
+-- preporučujete da čita
+
+select * from katalog
+where naslov like '%ljubav%'
+and sifra not in (2784, 2938, 3063, 2541);
+
+-- Koja mjesta su pobjednici u igri kaladont?
+
+select * from mjesto
+where naziv like '%nt';
+
+-- koliko ima mjesta
+
+select count(*) from mjesto;
+
+
+
+
+
 
 
 
