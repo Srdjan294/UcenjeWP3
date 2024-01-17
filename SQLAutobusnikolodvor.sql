@@ -66,3 +66,17 @@ insert into mjesta(naziv) values
 ('Rovinj'),('Samobor'),('Senj'),('Sinj'),('Sisak'),('Slatina'),('Slavonski Brod'),('Split'),('Stari Grad'),('Stubièke Toplice'),('Sukošan'),
 ('Sveti Ivan Zelina'),('Šibenik'),('Trogir'),('Umag'),('Valpovo'),('Varaždin'),('Varaždinske Toplice'),('Velika Gorica'),('Vinkovci'),
 ('Vir'),('Virovitica'),('Vodice'),('Vojniæ'),('Vrbovec'),('Vrbovsko'),('Vukovar'),('Zabok'),('Zadar'),('Zagreb'),('Zlatar'),('Županja');
+
+
+--select * from mjesta;
+
+
+insert into relacije(polaziste, odrediste, cijena) values
+(1, 95, 23.40), (1, 52, 4.70), (1, 72, 11.30);
+
+select * from relacije;
+
+select a.naziv as polaziste, a.naziv as odrediste
+from mjesta a
+inner join relacije b on a.sifra = b.polaziste
+inner join relacije c on a.sifra = c.odrediste;
