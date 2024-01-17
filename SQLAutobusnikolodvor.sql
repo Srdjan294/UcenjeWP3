@@ -76,7 +76,7 @@ insert into relacije(polaziste, odrediste, cijena) values
 
 select * from relacije;
 
-select a.naziv as polaziste, a.naziv as odrediste
+select a.naziv as polaziste, c.naziv as odrediste
 from mjesta a
 inner join relacije b on a.sifra = b.polaziste
-inner join relacije c on a.sifra = c.odrediste;
+inner join mjesta c on c.sifra = b.odrediste;
