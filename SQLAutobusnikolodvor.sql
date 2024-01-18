@@ -77,6 +77,9 @@ insert into relacije(polaziste, odrediste, cijena) values
 --Belišæe
 (2, 52, 4.70), (2, 95, 23.40);
 --Benkovac
+(3, 94, 37.07), (3, 95, 19.00), (3, 16, 14.00), (3, 78, 5.00),
+--Biograd na moru
+()
 
 
 select * from relacije;
