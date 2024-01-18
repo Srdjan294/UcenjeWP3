@@ -72,11 +72,16 @@ insert into mjesta(naziv) values
 
 
 insert into relacije(polaziste, odrediste, cijena) values
-(1, 95, 23.40), (1, 52, 4.70), (1, 72, 11.30);
+--Beli Manastir
+(1, 95, 23.40), (1, 52, 4.70), (1, 72, 11.30),
+--Belišæe
+(2, 52, 4.70), (2, 95, 23.40);
+--Benkovac
+
 
 select * from relacije;
 
-select a.naziv as polaziste, c.naziv as odrediste
+select a.naziv as polaziste, c.naziv as odrediste, b.cijena as cijena
 from mjesta a
 inner join relacije b on a.sifra = b.polaziste
 inner join mjesta c on c.sifra = b.odrediste;
