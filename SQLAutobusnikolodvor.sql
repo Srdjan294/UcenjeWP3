@@ -57,15 +57,15 @@ alter table relacije add foreign key (odrediste) references mjesta(sifra);
 alter table relacije add foreign key (polaziste) references mjesta(sifra);
 
 insert into mjesta(naziv) values
-('Beli Manastir'),('Belišæe'),('Benkovac'),('Biograd na moru'),('Bjelovar'),('Buzet'),('Cernik'),('Cres'),('Crikvenica'),('Èakovec'),('Èazma'),
-('Daruvar'),('Delnice'),('Donji Miholjac'),('Drniš'),('Dubrovnik'),('Dugo Selo'),('Ðakovo'),('Ðurðevac'),('Garešnica'),('Glina'),('Gospiæ'),
-('Grubišno Polje'),('Imotski'),('Ivanec'),('Ivaniæ-Grad'),('Karlovac'),('Knin'),('Koprivnica'),('Korèula'),('Krapina'),('Križevci'),('Krk'),
-('Kutina'),('Labin'),('Ludbreg'),('Makarska'),('Mali Lošinj'),('Metkoviæ'),('Mursko Središèe'),('Našice'),('Nova Gradiška'),('Novalja'),
-('Novi Marof'),('Novi Vinodolski'),('Novigrad'),('Novska'),('Ogulin'),('Omiš'),('Opatija'),('Orahovica'),('Osijek'),('Otoèac'),('Pag'),
-('Pakrac'),('Pazin'),('Petrinja'),('Plitvièka Jezera'),('Ploèe'),('Poreè'),('Požega'),('Pregrada'),('Pula'),('Rab'),('Rijeka'),
-('Rovinj'),('Samobor'),('Senj'),('Sinj'),('Sisak'),('Slatina'),('Slavonski Brod'),('Split'),('Stari Grad'),('Stubièke Toplice'),('Sukošan'),
+('Beli Manastir'),('Belišće'),('Benkovac'),('Biograd na moru'),('Bjelovar'),('Buzet'),('Cernik'),('Cres'),('Crikvenica'),('Čakovec'),('Čazma'),
+('Daruvar'),('Delnice'),('Donji Miholjac'),('Drniš'),('Dubrovnik'),('Dugo Selo'),('Ðakovo'),('Ðurđevac'),('Garešnica'),('Glina'),('Gospiæ'),
+('Grubišno Polje'),('Imotski'),('Ivanec'),('Ivanić-Grad'),('Karlovac'),('Knin'),('Koprivnica'),('Korčula'),('Krapina'),('Križevci'),('Krk'),
+('Kutina'),('Labin'),('Ludbreg'),('Makarska'),('Mali Lošinj'),('Metković'),('Mursko Središće'),('Našice'),('Nova Gradiška'),('Novalja'),
+('Novi Marof'),('Novi Vinodolski'),('Novigrad'),('Novska'),('Ogulin'),('Omiš'),('Opatija'),('Orahovica'),('Osijek'),('Otočac'),('Pag'),
+('Pakrac'),('Pazin'),('Petrinja'),('Plitvička Jezera'),('Ploče'),('Poreč'),('Požega'),('Pregrada'),('Pula'),('Rab'),('Rijeka'),
+('Rovinj'),('Samobor'),('Senj'),('Sinj'),('Sisak'),('Slatina'),('Slavonski Brod'),('Split'),('Stari Grad'),('Stubičke Toplice'),('Sukošan'),
 ('Sveti Ivan Zelina'),('Šibenik'),('Trogir'),('Umag'),('Valpovo'),('Varaždin'),('Varaždinske Toplice'),('Velika Gorica'),('Vinkovci'),
-('Vir'),('Virovitica'),('Vodice'),('Vojniæ'),('Vrbovec'),('Vrbovsko'),('Vukovar'),('Zabok'),('Zadar'),('Zagreb'),('Zlatar'),('Županja');
+('Vir'),('Virovitica'),('Vodice'),('Vojnić'),('Vrbovec'),('Vrbovsko'),('Vukovar'),('Zabok'),('Zadar'),('Zagreb'),('Zlatar'),('Županja');
 
 
 --select * from mjesta;
