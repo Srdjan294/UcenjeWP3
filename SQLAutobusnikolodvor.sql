@@ -74,7 +74,7 @@ insert into mjesta(naziv) values
 insert into relacije(polaziste, odrediste, cijena) values
 --Beli Manastir
 (1, 95, 23.40), (1, 52, 4.70), (1, 72, 11.30),
---Belišæe
+--Belišće
 (2, 52, 4.70), (2, 95, 23.40),
 --Benkovac
 (3, 94, 37.07), (3, 95, 19.00), (3, 16, 14.00), (3, 78, 5.00);
@@ -88,3 +88,20 @@ select a.naziv as polaziste, c.naziv as odrediste, b.cijena as cijena
 from mjesta a
 inner join relacije b on a.sifra = b.polaziste
 inner join mjesta c on c.sifra = b.odrediste;
+
+-- insert u korisnici
+
+insert into korisnici(ime, prezime, email, brojMobitela) values
+('Marko', 'Marković', 'mmarkovic@gmail.com', '0983843847'),
+('Marin', 'Marić', 'mmaric@gmail.com', '0983843947'),
+('Jasna', 'Jelić', 'jjelic@gmail.com', '0983842233');
+
+-- insert u racuni
+
+insert into racuni(korisnik, datumKupnje) values
+(1,'2024-1-23'),(2,'2024-1-23'),(3,'2024-1-23');
+
+-- insert u stavke
+
+insert into stavke(racun, relacija, kolicina, datumPutovanja) values
+(1,1,1,'2024-02-01'), (2,2,2,'2024-02-01'), (3,3,3,'2024-03-01');
