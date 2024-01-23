@@ -1,4 +1,4 @@
-use master;
+Ôªøuse master;
 go
 drop database if exists ERA_Autobusnikolodvor;
 go
@@ -57,15 +57,15 @@ alter table relacije add foreign key (odrediste) references mjesta(sifra);
 alter table relacije add foreign key (polaziste) references mjesta(sifra);
 
 insert into mjesta(naziv) values
-('Beli Manastir'),('BeliöÊe'),('Benkovac'),('Biograd na moru'),('Bjelovar'),('Buzet'),('Cernik'),('Cres'),('Crikvenica'),('»akovec'),('»azma'),
-('Daruvar'),('Delnice'),('Donji Miholjac'),('Drniö'),('Dubrovnik'),('Dugo Selo'),('–akovo'),('–urevac'),('Gareönica'),('Glina'),('GospiÊ'),
-('Grubiöno Polje'),('Imotski'),('Ivanec'),('IvaniÊ-Grad'),('Karlovac'),('Knin'),('Koprivnica'),('KorËula'),('Krapina'),('Kriûevci'),('Krk'),
-('Kutina'),('Labin'),('Ludbreg'),('Makarska'),('Mali Loöinj'),('MetkoviÊ'),('Mursko SrediöËe'),('Naöice'),('Nova Gradiöka'),('Novalja'),
-('Novi Marof'),('Novi Vinodolski'),('Novigrad'),('Novska'),('Ogulin'),('Omiö'),('Opatija'),('Orahovica'),('Osijek'),('OtoËac'),('Pag'),
-('Pakrac'),('Pazin'),('Petrinja'),('PlitviËka Jezera'),('PloËe'),('PoreË'),('Poûega'),('Pregrada'),('Pula'),('Rab'),('Rijeka'),
-('Rovinj'),('Samobor'),('Senj'),('Sinj'),('Sisak'),('Slatina'),('Slavonski Brod'),('Split'),('Stari Grad'),('StubiËke Toplice'),('Sukoöan'),
-('Sveti Ivan Zelina'),('äibenik'),('Trogir'),('Umag'),('Valpovo'),('Varaûdin'),('Varaûdinske Toplice'),('Velika Gorica'),('Vinkovci'),
-('Vir'),('Virovitica'),('Vodice'),('VojniÊ'),('Vrbovec'),('Vrbovsko'),('Vukovar'),('Zabok'),('Zadar'),('Zagreb'),('Zlatar'),('éupanja');
+('Beli Manastir'),('Beli≈°√¶e'),('Benkovac'),('Biograd na moru'),('Bjelovar'),('Buzet'),('Cernik'),('Cres'),('Crikvenica'),('√àakovec'),('√àazma'),
+('Daruvar'),('Delnice'),('Donji Miholjac'),('Drni≈°'),('Dubrovnik'),('Dugo Selo'),('√êakovo'),('√êur√∞evac'),('Gare≈°nica'),('Glina'),('Gospi√¶'),
+('Grubi≈°no Polje'),('Imotski'),('Ivanec'),('Ivani√¶-Grad'),('Karlovac'),('Knin'),('Koprivnica'),('Kor√®ula'),('Krapina'),('Kri≈æevci'),('Krk'),
+('Kutina'),('Labin'),('Ludbreg'),('Makarska'),('Mali Lo≈°inj'),('Metkovi√¶'),('Mursko Sredi≈°√®e'),('Na≈°ice'),('Nova Gradi≈°ka'),('Novalja'),
+('Novi Marof'),('Novi Vinodolski'),('Novigrad'),('Novska'),('Ogulin'),('Omi≈°'),('Opatija'),('Orahovica'),('Osijek'),('Oto√®ac'),('Pag'),
+('Pakrac'),('Pazin'),('Petrinja'),('Plitvi√®ka Jezera'),('Plo√®e'),('Pore√®'),('Po≈æega'),('Pregrada'),('Pula'),('Rab'),('Rijeka'),
+('Rovinj'),('Samobor'),('Senj'),('Sinj'),('Sisak'),('Slatina'),('Slavonski Brod'),('Split'),('Stari Grad'),('Stubi√®ke Toplice'),('Suko≈°an'),
+('Sveti Ivan Zelina'),('≈†ibenik'),('Trogir'),('Umag'),('Valpovo'),('Vara≈ædin'),('Vara≈ædinske Toplice'),('Velika Gorica'),('Vinkovci'),
+('Vir'),('Virovitica'),('Vodice'),('Vojni√¶'),('Vrbovec'),('Vrbovsko'),('Vukovar'),('Zabok'),('Zadar'),('Zagreb'),('Zlatar'),('≈Ωupanja');
 
 
 --select * from mjesta;
@@ -74,12 +74,12 @@ insert into mjesta(naziv) values
 insert into relacije(polaziste, odrediste, cijena) values
 --Beli Manastir
 (1, 95, 23.40), (1, 52, 4.70), (1, 72, 11.30),
---BeliöÊe
-(2, 52, 4.70), (2, 95, 23.40);
+--Beli≈°√¶e
+(2, 52, 4.70), (2, 95, 23.40),
 --Benkovac
-(3, 94, 37.07), (3, 95, 19.00), (3, 16, 14.00), (3, 78, 5.00),
+(3, 94, 37.07), (3, 95, 19.00), (3, 16, 14.00), (3, 78, 5.00);
 --Biograd na moru
-()
+
 
 
 select * from relacije;
