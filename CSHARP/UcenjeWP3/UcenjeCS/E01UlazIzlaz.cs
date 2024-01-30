@@ -11,15 +11,15 @@ namespace UcenjeCS
 
         public static void Izvedi()
         {
-            //    string Ime;
+            string ime;
 
-            //    Console.WriteLine("Unesi ime: ");
+            Console.WriteLine("unesi ime: ");
 
-            //    Ime = Console.ReadLine();
+            ime = Console.ReadLine();
 
-            //    Console.WriteLine(Ime);
+            Console.WriteLine(ime);
 
-            //Console.WriteLine("Srđan");
+            Console.WriteLine("srđan");
 
             //Console.WriteLine("Srđan");
 
@@ -33,9 +33,9 @@ namespace UcenjeCS
             //Console.Write("Edunova\n");
             //Console.Write("\tOsijek");
 
-            Console.WriteLine("|\\---/|");
-            Console.WriteLine("| o_o |");
-            Console.WriteLine(" \\_^_/");
+            //Console.WriteLine("|\\---/|");
+            //Console.WriteLine("| o_o |");
+            //Console.WriteLine(" \\_^_/");
         }
     }
 }
