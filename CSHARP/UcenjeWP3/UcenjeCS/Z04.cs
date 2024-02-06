@@ -20,8 +20,10 @@ namespace UcenjeCS
 
             Console.WriteLine("Unesi drugi broj: ");
             int y = int.Parse(Console.ReadLine());
+            
             int manji = x < y ? x : y;
             int veci = x > y ? x : y;
+            
             for(int i = manji; i <= veci; i++) 
             {
                 if(i % 2 != 0)
