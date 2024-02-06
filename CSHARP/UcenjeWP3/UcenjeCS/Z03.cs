@@ -23,13 +23,22 @@ namespace UcenjeCS
             int treciBroj = int.Parse(Console.ReadLine());
 
             if((prviBroj < drugiBroj) && (prviBroj < treciBroj)){
+                
                 Console.WriteLine(prviBroj + " je najmanji");
+
             }else if((drugiBroj < prviBroj) && (drugiBroj < treciBroj)){
+                
                 Console.WriteLine(drugiBroj + " je najmanji");
-            }else
+            
+            }else if((treciBroj < prviBroj) && (treciBroj < drugiBroj))
             {
                 Console.WriteLine(treciBroj + " je najmanji");
             }
+            else
+            {
+                Console.WriteLine("neki brojevi su jednaki");
+            }
+
             {
                
             }

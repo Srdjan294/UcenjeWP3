@@ -60,7 +60,7 @@ namespace UcenjeCS
 
             // logičko ili ALTGR + W |
             // | uvijek se provjeravaju oba uvjeta
-            // || ukoliko prvi uvjet nije zadovoljen, drugi se ne provjerava
+            // || ukoliko je prvi uvjet zadovoljen, drugi se ne provjerava
 
             if(i == 7 || j == 5)
             {
@@ -88,7 +88,7 @@ namespace UcenjeCS
                 Console.WriteLine("11. i je 1");
             }else if(i == 2)
             {
-                Console.WriteLine("12. i je 2");
+                Console.WriteLine("12. i je 2");  // else if može biti koliko želimo
             }
             else
             {

@@ -22,7 +22,7 @@ namespace UcenjeCS
             {
                 Console.WriteLine(x);
             }
-            if (x == y){
+            else if (x == y){
                 
                 Console.WriteLine("Brojevi su jednaki");
             }
