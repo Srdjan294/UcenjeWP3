@@ -89,7 +89,56 @@ namespace UcenjeCS
                 Console.WriteLine();
             }
 
-            
+            // Petlja se može preskočiti odnosno nastaviti
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (i == 3)
+                {
+                    continue;  // shortcircuiting, preskače 3
+                }
+
+                Console.WriteLine(i);
+            }
+
+            // petlja se može nasilno prekinuti
+
+            for(int i = 0; i < 10; i++)
+            {
+                if(i == 3)
+                {
+                    break;   // nakon trojke izlaz iz petlje
+                }
+
+                Console.WriteLine(i);
+            }
+
+            for(int i = 0; i < 10; i++)
+            {
+                for(int j = 0; j < 10; j++)
+                {
+                    // kako prekinuti vanjsku petlju (varijabla i)
+                    goto labela;  // break onda ne treba
+                    //break;  // prekidam unutarnju petlju (varijabla j)
+                    
+                }
+            }
+
+            labela:
+            Console.WriteLine("nastavljam nakon vanjske petlje");
+
+            // beskonačna petlja
+
+            for (; ; )
+            {
+                Console.WriteLine(new Random().NextInt64(1, 100));
+                break;
+            }
+
+
+
+
+
         }
     }
 }
