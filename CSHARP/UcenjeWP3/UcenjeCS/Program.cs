@@ -2,8 +2,11 @@
 
 using UcenjeCS;
 
+
+Z08.Izvedi();
+
 // Kada se metoda poziva na klasi (što je ovdje slučaj) ona je static
-E10Metode.Izvedi();
+//E10Metode.Izvedi();
 
 //Subota1.Izvedi();
 

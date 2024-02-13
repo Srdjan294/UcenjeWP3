@@ -82,7 +82,7 @@ namespace UcenjeCS
         protected static int Tip4(int odBroja, int doBroja)
         {
             int suma = 0;
-            for(int i = odBroja; i <= doBroja; i +=2) 
+            for(int i = odBroja; i <= doBroja; i += 2) 
             {
                 suma += i;
             }
