@@ -76,6 +76,26 @@ namespace UcenjeCS
                     Console.WriteLine("Obavezan unos");
                     continue;
                 }
+
+                try
+                {
+                    int.Parse(s);
+                    Console.WriteLine("Unos ne smije biti cijeli broj");
+                    continue;
+                }
+                catch (Exception)
+                {
+                }
+
+                try
+                {
+                    float.Parse(s);
+                    Console.WriteLine("Unos ne smije biti decimalni broj");
+                    continue;
+                }
+                catch(Exception) 
+                { 
+                }
                 return s;
             }
             
