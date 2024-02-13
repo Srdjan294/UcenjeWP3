@@ -2,7 +2,9 @@
 
 using UcenjeCS;
 
-E09Foreach.Izvedi();
+Subota1.Izvedi();
+
+//E09Foreach.Izvedi();
 
 //E08DoWhile.Izvedi();
 
