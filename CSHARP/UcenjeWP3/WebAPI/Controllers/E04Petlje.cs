@@ -19,14 +19,29 @@ namespace WebAPI.Controllers
 
             int zbroj = 0;
 
-            for(int i = a; i < b; i++)
+            if (a < b)
             {
-                if(i%2 == 0)
+                for (int i = a; i < b; i++)
                 {
-                  zbroj = zbroj + i;
+
+                    if (i % 2 == 0)
+                    {
+                        zbroj = zbroj + i;
+                    }
+
                 }
             }
+            else if (a > b)
+            {
+                for(int i = b; i < a; i++)
+                {
 
+                    if (i % 2 == 0)
+                    {
+                        zbroj = zbroj + i;
+                    }
+                }
+            }
 
             return zbroj;
             
