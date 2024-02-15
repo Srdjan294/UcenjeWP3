@@ -15,7 +15,19 @@ namespace UcenjeCS
 
         public static void Izvedi()
         {
-            string ime = Pomocno.UcitajString();
+            string ime = Pomocno.UcitajString("Unesi ime osobe");
+
+            int visina = Pomocno.UcitajCijeliBroj("Unesi visinu u cm");
+
+            float tezina = Pomocno.UcitajDecimalniBroj("Unesi težinu");
+
+            if(visina > 170 && visina < 190 && tezina < 90.5){
+                Console.ForegroundColor = ConsoleColor.Red;
+
+                Console.WriteLine(ime[^1] == 'a' ? "zgodna si " + ime: "zgodan si " + ime);
+                
+                Console.ResetColor();
+            }
         }
     }
 }

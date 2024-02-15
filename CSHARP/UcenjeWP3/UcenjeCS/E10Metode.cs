@@ -35,11 +35,9 @@ namespace UcenjeCS
         // ovdje je deklarirana, napisana
         // private se vidi samo u trenutnoj klasi
         private static void Tip1()
-        {
-            for (int i = 0; i < 100; i++)
-            {
-                Console.WriteLine("Hello iz metode koja nije primila parametre i ne vraća vrijednost");
-            }
+        {   
+            Console.WriteLine("Hello iz metode koja nije primila parametre i ne vraća vrijednost");
+            
         }
 
         // Tip 2. metoda prima parametre i ne vraća vrijednost

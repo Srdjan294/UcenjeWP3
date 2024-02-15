@@ -2,8 +2,9 @@
 
 using UcenjeCS;
 
+Z09.Izvedi();
 
-Z08.Izvedi();
+//Z08.Izvedi();
 
 // Kada se metoda poziva na klasi (što je ovdje slučaj) ona je static
 //E10Metode.Izvedi();
