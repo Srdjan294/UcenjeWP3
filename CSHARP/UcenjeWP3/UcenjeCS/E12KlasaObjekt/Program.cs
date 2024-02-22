@@ -72,9 +72,7 @@ namespace UcenjeCS.E12KlasaObjekt
             // Ispišite 135 s varijable g
             Console.WriteLine(g.Smjer.Trajanje);
 
-            CultureInfo ci = new CultureInfo("hr-HR");
-
-            ci.DateTimeFormat.Calendar.AlgorithmType.HasFlag(null);
+            
         }
     }
 }
