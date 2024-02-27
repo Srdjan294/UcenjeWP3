@@ -2,8 +2,9 @@
 
 using UcenjeCS;
 
+new UcenjeCS.E14VjezbanjeRadaSObjektima.Program();
 
-CiklicnaMatrica.Izvedi();
+//CiklicnaMatrica.Izvedi();
 
 // kada vidimo ključnu riječ new poziva se konstruktor
 
