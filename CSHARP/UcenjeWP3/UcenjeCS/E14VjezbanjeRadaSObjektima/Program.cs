@@ -58,7 +58,7 @@ namespace UcenjeCS.E14VjezbanjeRadaSObjektima
                     break;
                 case 5:
                     Console.WriteLine("Program je završio, doviđenja");
-                    break;
+                    return;
                 default:
                     Console.WriteLine("Nije dobra opcija");
                     Console.WriteLine("******************");
@@ -69,12 +69,16 @@ namespace UcenjeCS.E14VjezbanjeRadaSObjektima
 
         private void BrisanjeOsobe()
         {
+            if (Osobe.Count == 0)
+            {
+                Console.WriteLine("Nema osoba za brisati.");
+            }
 
             Console.WriteLine("************************");
             Console.WriteLine("*****Brisanje osobe*****");
             Console.WriteLine("************************");
             PrikaziOsobe();
-            int izbor = Pomocno.UcitajCijeliBroj("Izaberi broj osobe", 1, Osobe.Count);
+            int izbor = Pomocno.UcitajCijeliBroj("Izaberi broj osobe (0 odustani)", 0, Osobe.Count);
             if (izbor == 0)
             {
                 return;
@@ -84,6 +88,13 @@ namespace UcenjeCS.E14VjezbanjeRadaSObjektima
 
         private void PromjenaOsobe()
         {
+            if(Osobe.Count == 0)
+            {
+                Console.WriteLine("Nema osoba za mijenjat.");
+            }
+            Console.WriteLine("************************");
+            Console.WriteLine("*****Promjena osobe*****");
+            Console.WriteLine("************************");
             PrikaziOsobe();
             int izbor = Pomocno.UcitajCijeliBroj("Izaberi broj osobe (0 odustani)", 0, Osobe.Count);
             if(izbor == 0)
@@ -92,8 +103,8 @@ namespace UcenjeCS.E14VjezbanjeRadaSObjektima
             }
             var o = Osobe[izbor - 1];
             o.Ime = Pomocno.UcitajString("Učitaj ime[" + o.Ime + "]");
-            o.Prezime = Pomocno.UcitajString("Učitaj prezime");
-            o.Dob = Pomocno.UcitajCijeliBroj("Učitaj godine");
+            o.Prezime = Pomocno.UcitajString("Učitaj prezime [" + o.Prezime + "]");
+            o.Dob = Pomocno.UcitajCijeliBroj("Učitaj godine [" + o.Dob + "]");
         
         }
 
