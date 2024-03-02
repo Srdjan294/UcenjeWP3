@@ -97,7 +97,8 @@ namespace UcenjeCS.E17KonzolnaAplikacija
             int b = 1;
             foreach(Smjer smjer in Smjerovi)
             {
-                Console.WriteLine("{0}. {1}",b++,smjer.Naziv);
+                Console.WriteLine("{0}. {1} ({2}) ({3})",b++,smjer.Naziv, smjer.Trajanje, smjer.Cijena);
+                
             }
             Console.WriteLine("------------------");
         }
@@ -107,10 +108,10 @@ namespace UcenjeCS.E17KonzolnaAplikacija
             Smjerovi.Add(new Smjer { 
                 Sifra=1,
                 Naziv= "Web programiranje",
-            Trajanje=250,
-            Cijena=1000,
-            Upisnina=50,
-            Verificiran=true});
+                Trajanje=250,
+                Cijena=1000,
+                Upisnina=50,
+                Verificiran=true});
 
             Smjerovi.Add(new Smjer
             {
@@ -121,6 +122,18 @@ namespace UcenjeCS.E17KonzolnaAplikacija
                 Upisnina = 50,
                 Verificiran = true
             });
+
+            // dodaj smjer
+            Smjerovi.Add(new Smjer
+            {
+                Sifra = 3,
+                Naziv = "Serviser",
+                Trajanje = 130,
+                Cijena = 900,
+                Upisnina = 50,
+                Verificiran = true
+            });
+            // završilo dodavanje smjera
         }
     }
 }

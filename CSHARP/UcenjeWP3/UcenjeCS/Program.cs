@@ -2,7 +2,9 @@
 
 using UcenjeCS;
 
-new UcenjeCS.E14VjezbanjeRadaSObjektima.Program();
+new UcenjeCS.E17KonzolnaAplikacija.Izbornik();
+
+//new UcenjeCS.E14VjezbanjeRadaSObjektima.Program();
 
 //CiklicnaMatrica.Izvedi();
 

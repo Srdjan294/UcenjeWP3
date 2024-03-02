@@ -10,7 +10,7 @@ namespace UcenjeCS.E17KonzolnaAplikacija
 
         public Izbornik() 
         {
-            Pomocno.dev = false;
+            Pomocno.dev = true;
             ObradaSmjer = new ObradaSmjer();
             ObradaPolaznik = new ObradaPolaznik();
             ObradaGrupa=new ObradaGrupa(this);
