@@ -4,44 +4,49 @@ namespace UcenjeCS.E17KonzolnaAplikacija
 {
     internal class ObradaSmjer
     {
-        public List<Smjer> Smjerovi { get;  }
+        public List<Smjer> Smjerovi { get; }
 
-        public ObradaSmjer() 
+        public ObradaSmjer()
         {
             Smjerovi = new List<Smjer>();
             if (Pomocno.dev)
             {
                 TestniPodaci();
             }
-            
-        
+
+
         }
 
         public void PrikaziIzbornik()
         {
+            
             Console.WriteLine("Izbornik za rad s smjerovima");
             Console.WriteLine("1. Pregled postojećih smjerova");
             Console.WriteLine("2. Unos novog smjera");
             Console.WriteLine("3. Promjena postojećeg smjera");
             Console.WriteLine("4. Brisanje smjera");
             Console.WriteLine("5. Povratak na glavni izbornik");
-            switch(Pomocno.ucitajBrojRaspon("Odaberite stavku izbornika smjera: ",
+            switch (Pomocno.ucitajBrojRaspon("Odaberite stavku izbornika smjera: ",
                 "Odabir mora biti 1-5", 1, 5))
             {
                 case 1:
+                    Console.Clear();
                     PrikaziSmjerove();
                     PrikaziIzbornik();
                     break;
                 case 2:
                     UnosNovogSmjera();
+                    Console.Clear();
                     PrikaziIzbornik();
                     break;
                 case 3:
                     PromjenaSmjera();
+                    Console.Clear();
                     PrikaziIzbornik();
                     break;
                 case 4:
                     BrisanjeSmjera();
+                    Console.Clear();
                     PrikaziIzbornik();
                     break;
                 case 5:
@@ -70,7 +75,7 @@ namespace UcenjeCS.E17KonzolnaAplikacija
         {
             PrikaziSmjerove();
             int index = Pomocno.ucitajBrojRaspon("Odaberi redni broj smjera: ", "Nije dobar odabir", 1, Smjerovi.Count());
-            Smjerovi.RemoveAt(index-1);
+            Smjerovi.RemoveAt(index - 1);
         }
 
         private void UnosNovogSmjera()
@@ -95,24 +100,28 @@ namespace UcenjeCS.E17KonzolnaAplikacija
             Console.WriteLine("---- Smjerovi ----");
             Console.WriteLine("------------------");
             int b = 1;
-            foreach(Smjer smjer in Smjerovi)
+            foreach (Smjer smjer in Smjerovi)
             {
-                Console.WriteLine("{0}. {1} ({2}) ({3})",b++,smjer.Naziv, smjer.Trajanje, smjer.Cijena);
-                
+                //Console.WriteLine("{0}. {1} ({2})",b++,smjer.Naziv,smjer.Trajanje);
+                Console.WriteLine(b++ + ". " + smjer.Naziv + " (" + smjer.Trajanje + ")");
             }
             Console.WriteLine("------------------");
         }
 
         private void TestniPodaci()
         {
-            Smjerovi.Add(new Smjer { 
-                Sifra=1,
-                Naziv= "Web programiranje",
-                Trajanje=250,
-                Cijena=1000,
-                Upisnina=50,
-                Verificiran=true});
 
+            Smjerovi.Add(new Smjer
+            {
+                Sifra = 1,
+                Naziv = "Web programiranje",
+                Trajanje = 250,
+                Cijena = 1000,
+                Upisnina = 50,
+                Verificiran = true
+            });
+
+            // dodaj smjer
             Smjerovi.Add(new Smjer
             {
                 Sifra = 2,
@@ -122,6 +131,8 @@ namespace UcenjeCS.E17KonzolnaAplikacija
                 Upisnina = 50,
                 Verificiran = true
             });
+            // završilo dodavanje smjera
+
 
             // dodaj smjer
             Smjerovi.Add(new Smjer
@@ -129,11 +140,14 @@ namespace UcenjeCS.E17KonzolnaAplikacija
                 Sifra = 3,
                 Naziv = "Serviser",
                 Trajanje = 130,
-                Cijena = 900,
+                Cijena = 1000,
                 Upisnina = 50,
                 Verificiran = true
             });
             // završilo dodavanje smjera
+
+
+
         }
     }
 }

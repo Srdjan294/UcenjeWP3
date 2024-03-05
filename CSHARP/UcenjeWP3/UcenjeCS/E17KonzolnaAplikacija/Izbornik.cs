@@ -10,6 +10,7 @@ namespace UcenjeCS.E17KonzolnaAplikacija
 
         public Izbornik() 
         {
+            
             Pomocno.dev = true;
             ObradaSmjer = new ObradaSmjer();
             ObradaPolaznik = new ObradaPolaznik();
@@ -27,16 +28,20 @@ namespace UcenjeCS.E17KonzolnaAplikacija
 
         private void PrikaziIzbornik()
         {
+            Console.Clear();
             Console.WriteLine("Glavni izbornik");
             Console.WriteLine("1. Smjerovi");
             Console.WriteLine("2. Polaznici");
             Console.WriteLine("3. Grupe");
             Console.WriteLine("4. Izlaz iz programa");
-            
-            switch(Pomocno.ucitajBrojRaspon("Odaberite stavku izbornika: ",
-                "Odabir mora biti 1 - 4.", 1, 4))
+            Console.WriteLine("5. Times New Roman");
+            Console.WriteLine("6. Arial");
+
+            switch (Pomocno.ucitajBrojRaspon("Odaberite stavku izbornika: ",
+                "Odabir mora biti 1 - 4.", 1, 6))
             {
                 case 1:
+                    Console.Clear();
                     ObradaSmjer.PrikaziIzbornik();
                     PrikaziIzbornik();
                     break;
@@ -50,6 +55,14 @@ namespace UcenjeCS.E17KonzolnaAplikacija
                     break;
                 case 4:
                     Console.WriteLine("Hvala na korištenju, doviđenja");
+                    break;
+                    case 5:
+                    ConsoleHelper.SetConsoleFont("Times New Roman", 40);
+                    PrikaziIzbornik();
+                    break;
+                case 6:
+                    ConsoleHelper.SetConsoleFont("Arial", 50);
+                    PrikaziIzbornik();
                     break;
 
             }

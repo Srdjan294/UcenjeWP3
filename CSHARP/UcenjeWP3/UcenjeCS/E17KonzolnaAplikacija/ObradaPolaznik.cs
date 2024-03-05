@@ -18,6 +18,7 @@ namespace UcenjeCS.E17KonzolnaAplikacija
 
         public void PrikaziIzbornik()
         {
+           
             Console.WriteLine("Izbornik za rad s polaznicima");
             Console.WriteLine("1. Pregled postojećih polaznika");
             Console.WriteLine("2. Unos novog polaznika");
@@ -100,13 +101,25 @@ namespace UcenjeCS.E17KonzolnaAplikacija
 
         private void TestniPodaci()
         {
+
+            //for(int i=0;i<20; i++) {
+            //    Polaznici.Add(new Polaznik
+            //    {
+            //        Sifra = i+1,
+            //        Ime = Faker.Name.First(),
+            //        Prezime = Faker.Name.Last(),
+            //        Email = Faker.Internet.Email(),
+            //        Oib = Faker.Identification.SocialSecurityNumber()
+            //    });
+            //}
+
             Polaznici.Add(new Polaznik
             {
                 Sifra = 1,
                 Ime = "Ana",
-                Prezime="Gal",
-                Email="agal@gmail.com",
-                Oib="33736472822"
+                Prezime = "Gal",
+                Email = "agal@gmail.com",
+                Oib = "33736472822"
             });
 
             Polaznici.Add(new Polaznik
