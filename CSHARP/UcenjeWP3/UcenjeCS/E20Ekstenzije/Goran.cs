@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS.E20Ekstenzije
 {
-    internal class Goran:Entitet
+    internal class Goran:Entitet, ISucelje
     {
         public void Posao()
         {
