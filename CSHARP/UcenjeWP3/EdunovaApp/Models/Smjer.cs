@@ -9,6 +9,6 @@ namespace EdunovaApp.Models
         public decimal? Cijena { get; set; }
 
         [Column("vaucer")] 
-        public bool? Veriificiran { get; set; }
+        public bool? Verificiran { get; set; }
     }
 }
