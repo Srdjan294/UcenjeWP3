@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-        <span className='crveno'>hello</span>
+        <span className = 'crveno'>Hello</span>
         <a href="https://vitejs.dev" target="_blank">
           <img src={mojLogo} className="logo" alt="Vite logo" />
         </a>
