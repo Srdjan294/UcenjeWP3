@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import SmjerService from '../../services/SmjerService';
 import { Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import {RoutesNames} from '../../constants'
 
 
 
@@ -43,6 +45,7 @@ export default function Smjerovi(){
     return(
         <>
             <Container>
+                <Link to={RoutesNames.SMJER_NOVI} >Dodaj</Link>
               <Table striped bordered hover responsive>
                 <thead>
                     <tr>
