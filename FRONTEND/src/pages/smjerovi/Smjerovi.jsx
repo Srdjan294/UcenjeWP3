@@ -6,75 +6,68 @@ import { Link } from 'react-router-dom';
 import {RoutesNames} from '../../constants'
 
 
-
-
 export default function Smjerovi(){
-
     const [smjerovi, setSmjerovi] = useState();
 
 
     async function dohvatiSmjerove(){
         await SmjerService.get()
-        .then((odg) =>{
+        .then((odg)=>{
             setSmjerovi(odg);
         })
-        .catch((e) => {
+        .catch((e)=>{
             console.log(e);
         });
     }
 
-    useEffect(() => {
+    useEffect(()=>{
         dohvatiSmjerove();
     },[]);
 
-
     function formatirajVerificiran(v){
-
-        if(v = null){
-            return 'nije definirano'
+        if(v==null){
+            return 'nije definirano';
         }
 
         if(v){
             return 'DA';
-
         }
 
-        return 'NE'
+        return 'NE';
     }
 
     return(
         <>
-            <Container>
-                <Link to={RoutesNames.SMJER_NOVI} >Dodaj</Link>
-              <Table striped bordered hover responsive>
-                <thead>
-                    <tr>
-                        <th>Naziv</th>
-                        <th>Trajanje</th>
-                        <th>Cijena</th>
-                        <th>Verificiran</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {smjerovi && smjerovi.map((smjer,index)=>(
-
-                         <tr key = {index}>
-                            <td>{smjer.naziv}</td>
-                            <td>{smjer.trajanje}</td>
-                            <td>{smjer.cijena}</td>
-                            <td>
-                                {formatirajVerificiran(smjer.vericifiran)}
-                                {/*smjer.verificiran == null ? 'Nije definirano' : smjer.verificiran ? 'DA' : 'NE'*/}
-                                
-                            </td>  
-                         </tr>   
-
-                    ))}
-                </tbody>
-
-              </Table>
-
-            </Container>
+           <Container>
+            <Link to={RoutesNames.SMJER_NOVI}> Dodaj </Link>
+            <Table striped bordered hover responsive>
+                    <thead>
+                        <tr>
+                            <th>Naziv</th>
+                            <th>Trajanje</th>
+                            <th>Cijena</th>
+                            <th>Verificiran</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {smjerovi && smjerovi.map((smjer,index)=>(
+                            <tr key={index}>
+                                <td>{smjer.naziv}</td>
+                                <td>{smjer.trajanje}</td>
+                                <td>{smjer.cijena}</td>
+                                <td>
+                                    {formatirajVerificiran(smjer.verificiran)}
+                                    {/* 
+                                    {smjer.verificiran==null 
+                                    ? 'Nije definirano'
+                                    : smjer.verificiran ? 'DA' : 'NE'}
+                                    */}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+            </Table>
+           </Container>
         </>
     );
 }

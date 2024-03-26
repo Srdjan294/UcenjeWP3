@@ -3,6 +3,6 @@ export const RoutesNames = {
 
     SMJER_PREGLED: '/smjerovi',
     SMJER_NOVI: '/smjerovi/dodaj',
-    SMJER_PROMJENI: '/smjerovi/:sifra' 
+    SMJER_PROMJENI: '/smjerovi/:sifra'
     
 };
