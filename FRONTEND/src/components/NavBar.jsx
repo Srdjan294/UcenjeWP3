@@ -22,11 +22,11 @@ export default function NavBar(){
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="https://srdjan294-001-site1.anytempurl.com/"
+            <Nav.Link href="https://tjakopec-001-site1.ftempurl.com/swagger/index.html/"
             target='_blank'>API</Nav.Link>
             
             <NavDropdown title="Programi" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Smjerovi</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate(RoutesNames.SMJER_PREGLED)}>Smjerovi</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Polaznici
               </NavDropdown.Item>
