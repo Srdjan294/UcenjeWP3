@@ -27,6 +27,13 @@ namespace EdunovaApp.Controllers
             return new JsonResult(_context.Smjerovi.ToList());
         }
 
+        [HttpGet]
+        [Route("{sifra:int}")]
+        public IActionResult GetBySifra(int sifra)
+        {
+            return new JsonResult(_context.Smjerovi.Find(sifra));
+        }
+
         [HttpPost]
         public IActionResult Post(Smjer smjer)
         {
