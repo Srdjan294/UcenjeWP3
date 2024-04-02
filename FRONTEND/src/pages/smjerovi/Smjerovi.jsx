@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import SmjerService from '../../services/SmjerService';
 import {Button, Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {RoutesNames} from '../../constants'
 
 
 
 export default function Smjerovi(){
     const [smjerovi, setSmjerovi] = useState();
+    const navigate = useNavigate();
 
 
     async function dohvatiSmjerove(){
@@ -86,6 +87,12 @@ export default function Smjerovi(){
                                     variant = 'danger'
                                     >
                                     Obriši
+                                    </Button>
+                                        {/* kosi jednostruki navodnici '' su AltGR + 7 */}
+                                    <Button
+                                    onClick={() => (navigate(`/smjerovi/${smjer.sifra}`))}
+                                    >
+                                    Promjeni
                                     </Button>
                                 </td>
                             </tr>
